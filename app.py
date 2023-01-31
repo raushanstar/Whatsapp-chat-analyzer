@@ -17,7 +17,7 @@ if uploaded_file is not None:
     selected_user=st.sidebar.selectbox("Show analysis wrt ",user_list)
     if st.sidebar.button('show analysis'):
         user, num_message,total_words,no_of_media,links=helper.fetch(selected_user,df)
-        col1,col2,col3,col4,col5=st.beta_columns(5)
+        col1,col2,col3,col4,col5=st.columns(5)
         with col1:
             st.header('Total User')
             st.title(user)
@@ -42,7 +42,7 @@ if uploaded_file is not None:
         st.pyplot(fig)
         #activity_map
         st.title('Activity Map')
-        col1,col2=st.beta_columns(2)
+        col1,col2=st.columns(2)
         with col1:
             st.header('Most busy day')
             busy_day=helper.week_activity_map(selected_user,df)
@@ -71,7 +71,7 @@ if uploaded_file is not None:
             fig,ax=plt.subplots()
 
 
-            col1,col2=st.beta_columns(2)
+            col1,col2=st.columns(2)
             with col1:
                 st.title('Most Busy user')
                 ax.bar(x.index, x.values,color='red')
@@ -93,7 +93,7 @@ if uploaded_file is not None:
         #emoji
         st.title('Total emoji')
         emoji_df=helper.emoji_count(selected_user,df)
-        col1,col2=st.beta_columns(2)
+        col1,col2=st.columns(2)
         with col1:
             st.dataframe(emoji_df)
         with col2:
