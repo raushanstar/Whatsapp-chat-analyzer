@@ -1,5 +1,5 @@
 ﻿# Whatsapp-chat-analyzer
-Demo Link: https://wc-analysis.herokuapp.com/
+Demo Link: https://raushanstar-whatsapp-chat-analyzer-app-y0jkxv.streamlit.app/
 
 Using Streamlit library I have created Whatsapp chat analyzer ,currently this app works only 24 Hour format 
 
@@ -17,5 +17,5 @@ Open any chat conversation in whatsapp.
 ## step 2;-
 click 3 dot icon and Export chat.
 
-upload this file on https://wc-analysis.herokuapp.com/  
+upload this file on https://raushanstar-whatsapp-chat-analyzer-app-y0jkxv.streamlit.app/
 Now you can view your chat details.
